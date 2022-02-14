@@ -1,0 +1,33 @@
+﻿@model WebApp.ViewModels.LoginModel
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="~/css/Login/style.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/Index/" />
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+                <form method="post" class="form-horizontal">
+                    <span class="heading">SIGN IN</span>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="E-mail" name="Email">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="form-group help">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="Password">
+                        <i class="fa fa-lock"></i>
+                        <a href="#" class="fa fa-question-circle"></a>
+                    </div>
+                    <div class="form-group">
+
+                        <a href="/Account/Register" class="btn form-horizontal">sign up</a>
+                        <button type="submit" class="btn form-horizontal">sign in</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
