@@ -1,8 +1,13 @@
 ﻿
+
+html {
+    height: 100vh;
+    background: url(/css/gradient.jpg) no-repeat;
+    background-size: cover;
+}
 body {
     padding-top: 10vh;
-    background: url(https://p4.wallpaperbetter.com/wallpaper/676/92/984/blurred-gradient-colorful-wallpaper-preview.jpg)no-repeat;
-    background-size: cover;
+    background-color: transparent;
 }
 
 

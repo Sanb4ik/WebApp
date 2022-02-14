@@ -1,7 +1,12 @@
-﻿body {
-    padding-top: 10vh;
-    background: url(https://p4.wallpaperbetter.com/wallpaper/676/92/984/blurred-gradient-colorful-wallpaper-preview.jpg)no-repeat;
+﻿
+html {
+    height: 100vh;
+    background: url(/css/gradient.jpg) no-repeat;
     background-size: cover;
+}
+body {
+    padding-top: 10vh;
+    background-color: transparent;
 }
 
 .container {
@@ -84,38 +89,38 @@
         border: 1px solid #11a3fc;
     }
 
-        .form-horizontal .main-checkbox label {
+    .form-horizontal .main-checkbox label {
             width: 20px;
             height: 20px;
             position: absolute;
             top: 0;
             left: 0;
             cursor: pointer;
-        }
+      }
 
-            .form-horizontal .main-checkbox label:after {
-                content: "";
-                width: 10px;
-                height: 5px;
-                position: absolute;
-                top: 5px;
-                left: 4px;
-                border: 3px solid #fff;
-                border-top: none;
-                border-right: none;
-                background: transparent;
-                opacity: 0;
-                -webkit-transform: rotate(-45deg);
-                transform: rotate(-45deg);
-            }
+    .form-horizontal .main-checkbox label:after {
+            content: "";
+            width: 10px;
+            height: 5px;
+            position: absolute;
+            top: 5px;
+            left: 4px;
+            border: 3px solid #fff;
+            border-top: none;
+            border-right: none;
+            background: transparent;
+            opacity: 0;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    }
 
-        .form-horizontal .main-checkbox input[type=checkbox] {
+    .form-horizontal .main-checkbox input[type=checkbox] {
             visibility: hidden;
-        }
+    }
 
-            .form-horizontal .main-checkbox input[type=checkbox]:checked + label:after {
-                opacity: 1;
-            }
+    .form-horizontal .main-checkbox input[type=checkbox]:checked + label:after {
+        opacity: 1;
+    }
 
     .form-horizontal .text {
         float: left;
@@ -139,11 +144,4 @@
     }
 
 
-@media only screen and (max-width: 479px) {
-    .form-horizontal .form-group {
-        padding: 0 25px;
-    }
 
-        .form-horizontal .form-group i {
-        }
-}
