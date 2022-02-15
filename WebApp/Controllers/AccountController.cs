@@ -77,7 +77,7 @@ namespace WebApp.Controllers
                     db.Users.Add(newUser);
                     await db.SaveChangesAsync();
 
-                    await Authenticate(model.Email); // аутентификация
+                    await Authenticate(model.Email); 
 
                     return RedirectToAction("Index", "Home");
                 }
@@ -88,14 +88,14 @@ namespace WebApp.Controllers
 
         private async Task Authenticate(string userName)
         {
-            // создаем один claim
+           
             var claims = new List<Claim>
             {
                 new Claim(ClaimsIdentity.DefaultNameClaimType, userName)
             };
-            // создаем объект ClaimsIdentity
+           
             ClaimsIdentity id = new ClaimsIdentity(claims, "ApplicationCookie", ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);
-            // установка аутентификационных куки
+           
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(id));
         }
 
